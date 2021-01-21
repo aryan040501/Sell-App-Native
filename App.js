@@ -8,7 +8,29 @@ export default function App() {
 
   const {landscape} = useDeviceOrientation();
   return (
-    <ViewImageScreen/>
+    <View
+      style={{
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+
+      <Text style={{
+        //fontFamily: "Roboto",
+        fontSize: 30,
+        fontStyle: "italic",
+        fontWeight: "600",
+        textTransform: "capitalize",
+        textAlign: "justify",
+        padding: 10,
+
+      }}>I love React native! This is my first react native app.. Heres my some text</Text>
+
+    </View>
+
+    
+
   );
 }
 
