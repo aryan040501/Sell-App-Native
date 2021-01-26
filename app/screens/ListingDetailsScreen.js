@@ -1,6 +1,8 @@
 import React from 'react'
 import { StyleSheet, Text, View, Image } from 'react-native'
 
+import ListItem from "../components/ListItem"
+
 export default function ListingDetailsScreen() {
     return (
         <View>
@@ -9,6 +11,14 @@ export default function ListingDetailsScreen() {
                 <Text style={styles.title}>Jacket for Sale</Text>
                 <Text style={styles.price}>Rs 100</Text>
             </View>
+            <View style={styles.user}>
+                <ListItem
+                    image={require("../assets/mosh.jpg")}
+                    title="Mosh Hamedani"
+                    subtitle="5 listing"
+                />
+            </View>
+            
         </View>
     )
 }
@@ -27,5 +37,9 @@ const styles = StyleSheet.create({
     },
     price: {
         color: "green",
+        fontWeight: "bold",
     },
+    user:{
+        marginVertical: 40,
+    }
 })
